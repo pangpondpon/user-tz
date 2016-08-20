@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Demo User-tz</title>
+    <link rel="stylesheet" href="">
+</head>
+
+<body>
+	<h2>Time will be shown in your timezone.</h2>
+	<p>Please see the code to help you understand how to use this page.</p>
+
+    <ul>
+        <li data-timezone="Europe/London" data-time="2016-08-14 22:00:00" class="time"></li>
+        <li data-timezone="Europe/London" data-time="2016-08-15 18:30:00" class="time"></li>
+        <li data-timezone="Europe/London" data-time="2016-08-16 20:00:00" class="time"></li>
+        <li data-timezone="Europe/London" data-time="2016-08-16 23:45:00" class="time"></li>
+        <li data-timezone="Europe/London" data-time="2016-08-17 08:30:00" class="time"></li>
+        <li data-timezone="Europe/London" data-time="2016-08-18 10:00:00" class="time"></li>
+    </ul>
+
+    <!-- Dependencies -->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/moment/min/moment.min.js"></script>
+    <script src="bower_components/moment-timezone/builds/moment-timezone-with-data-2010-2020.min.js"></script>
+    <script src="js/jstz.js"></script>
+
+    <!-- User tz goes here -->
+    <script src="user-tz.js"></script>
+
+    <script>
+    $(function() {
+        // Initialize userTimezone for all element with class time
+        $(".time").userTimezone("YYYY-MM-DD HH:mm");
+    });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "user-tz",
+  "main": "user-tz.js",
+  "homepage": "https://github.com/pangpondpon/user-tz",
+  "authors": [
+    "Patompong Savaengsuk <pond@netearth.net>"
+  ],
+  "description": "Transform data time to user time",
+  "keywords": [
+    "timezone"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "moment": "^2.14.1",
+    "moment-timezone": "^0.5.5",
+    "jquery": "^3.1.0",
+    "jstz": "*"
+  }
+}
