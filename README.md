@@ -15,6 +15,7 @@ This library will help you transform data time to user time according to user ti
 1. Assign class to elements
 2. Call userTimezone(format); on class selector
 
+PS. See demo.html for example. Don't forget to run `bower install` to download all dependencies before run the demo.
 
 Code example:
 ```
