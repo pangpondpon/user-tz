@@ -18,7 +18,7 @@ This library will help you transform data time to user time according to user ti
 PS. See demo.html for example. Don't forget to run `bower install` to download all dependencies before run the demo.
 
 Code example:
-```
+```html
 <ul>
     <li data-timezone="Europe/London" data-time="2016-08-14 22:00:00" class="time"></li>
     <li data-timezone="Europe/London" data-time="2016-08-15 18:30:00" class="time"></li>
@@ -30,7 +30,9 @@ Code example:
 ```
 
 Call userTimezone method on class selector
-```
+```html
+<!-- Include user-tz.js -->
+<script src="user-tz.js"></script>
 <script>
     $(function() {
         // Initialize userTimezone for all element with class time
